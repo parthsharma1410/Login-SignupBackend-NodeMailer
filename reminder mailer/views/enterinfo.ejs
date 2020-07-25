@@ -1,0 +1,95 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">
+          Enter Info
+        </h1>
+        <form action="/users/register" method="POST">
+          <div class="form-group">
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter Name"
+              value="<%= typeof name != 'undefined' ? name : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+              value="<%= typeof email != 'undefined' ? email : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="string"
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Enter message"
+              value="<%= typeof messgae != 'undefined' ? message : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="int"
+              id="year"
+              name="year"
+              class="form-control"
+              placeholder="Enter year"
+              value="<%= typeof year != 'undefined' ? year : '' %>"
+            />
+            <input
+            type="int"
+            id="month"
+            name="month"
+            class="form-control"
+            placeholder="Enter month in digits"
+            value="<%= typeof month != 'undefined' ? month : '' %>"
+          />
+          <input
+          type="int"
+          id="day"
+          name="day"
+          class="form-control"
+          placeholder="Enter day of the month"
+          value="<%= typeof day != 'undefined' ? day : '' %>"
+        />
+         <input
+              type="int"
+              id="hour"
+              name="hour"
+              class="form-control"
+              placeholder="Enter hour"
+              value="<%= typeof hour != 'undefined' ? hour : '' %>"
+            />
+            <input
+            type="int"
+            id="minute"
+            name="minute"
+            class="form-control"
+            placeholder="Enter minute"
+            value="<%= typeof minute != 'undefined' ? minute : '' %>"
+          />
+          <input
+          type="int"
+          id="ampm"
+          name="ampm"
+          class="form-control"
+          placeholder="Enter 0 for am 1 for pm"
+          value="<%= typeof ampm != 'undefined' ? ampm : '' %>"
+        />
+          </div>
+          <button type="submit" class="btn btn-success btn-block">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
